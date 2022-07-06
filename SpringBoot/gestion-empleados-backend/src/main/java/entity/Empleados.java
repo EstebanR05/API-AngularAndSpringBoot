@@ -16,11 +16,11 @@ public class Empleados implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	@Column(name = "nombre", length = 60, nullable = false)
+	@Column(name = "nombre")
 	private String nombre;
-	@Column(name = "apellido", length = 60, nullable = false)
+	@Column(name = "apellido")
 	private String apellido;
-	@Column(name = "email", length = 60, nullable = false, unique = true)
+	@Column(name = "email")
 	private String email;
 
 	public Long getId() {
